@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewyart — Creative Studio</title>
+  <meta name="description" content="Brewyart Creative Studio — branding sportif, identités visuelles, contenus premium et expériences digitales sur mesure." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/components/projets.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/components/ambient-gradient.css" />
+  <link rel="stylesheet" href="assets/css/components/hero.css" />
+  <link rel="stylesheet" href="assets/css/components/services.css" />
+  <link rel="stylesheet" href="assets/css/components/about.css" />
+  <link rel="stylesheet" href="assets/css/components/contact.css" />
+</head>
+<body class="bg-neutral-50 text-neutral-900 antialiased selection:bg-black selection:text-white">
+  <div class="ambient-orb"></div>
+  <div id="custom-cursor" class="custom-cursor">
+  <div class="custom-cursor-inner"></div>
+</div>
+
+ <header class="site-header">
+  <div class="site-header-bar">
+    <a href="#hero" class="site-header-brand" aria-label="Brewyart — retour en haut">
+      <img src="assets/img/brewyart_logo.svg" alt="Brewyart logo" class="site-header-logo" />
+    </a>
+
+    <nav class="site-header-nav" aria-label="Navigation principale">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projets" class="nav-link">Projets</a>
+      <a href="#about" class="nav-link">À propos</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="site-header-actions">
+      <a href="#contact" class="site-header-cta">Me contacter</a>
+
+      <button
+        class="site-header-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="site-mobile-menu" hidden>
+    <nav class="site-mobile-nav" aria-label="Navigation mobile">
+      <a href="#services">Services</a>
+      <a href="#projets">Projets</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <!-- 01. HERO -->
+    <section id="hero"></section>
+
+    <!-- 02. SERVICES -->
+    <section id="services"></section>
+
+    <!-- 03. PROJETS -->
+    <section id="projets"></section>
+
+    <!-- 04. GAME -->
+    <section id="game"></section>
+
+    <!-- 05. ABOUT -->
+    <section id="about" class="about">
+      <div class="about-shell">
+        <div class="about-grid">
+          <div class="about-visual">
+            <img
+              class="about-character"
+              src="./assets/img/Seb Cartoon.png"
+              alt="Portrait illustré de Sébastien Brouillard"
+            />
+            <div class="about-visual-note">
+              Designer. Builder. Problem solver.
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-header">
+              <div class="about-header-inner">
+                <div class="about-eyebrow">
+                  <span class="about-eyebrow-dot"></span>
+                  À propos
+                </div>
+
+                <h2 class="about-title">
+                  Du contrôle à la création.
+                  <span class="muted">Même exigence.</span>
+                </h2>
+
+                <p class="about-subtitle">
+                  Des identités pensées pour durer. Des visuels conçus pour marquer.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-meta-pill">
+              +12 ans de rigueur analytique au service d’un design plus juste.
+            </div>
+
+            <div class="about-cards">
+              <article class="about-card">
+                <p class="about-card-kicker">Vision</p>
+                <h3 class="about-card-title">Lire le jeu</h3>
+                <p class="about-card-text">
+                  Comprendre le terrain avant de construire la bonne direction.
+                </p>
+              </article>
+
+              <article class="about-card">
+                <p class="about-card-kicker">Strategy</p>
+                <h3 class="about-card-title">Jouer juste</h3>
+                <p class="about-card-text">
+                  Des choix visuels précis au service d’un objectif clair.
+                </p>
+              </article>
+
+              <article class="about-card">
+                <p class="about-card-kicker">Impact</p>
+                <h3 class="about-card-title">Marquer fort</h3>
+                <p class="about-card-text">
+                  Des visuels qui captent vite et restent en mémoire.
+                </p>
+              </article>
+            </div>
+
+            <div class="about-signature">
+              <span class="about-signature-dot"></span>
+              Human-driven. AI-enhanced.
+            </div>
+
+            <a href="#contact" class="about-cta">
+              <div>
+                <p class="about-cta-kicker">Contact</p>
+                <h3 class="about-cta-title">Construisons quelque chose de solide</h3>
+                <p class="about-cta-text">
+                  Un projet à lancer, une image à renforcer ou une identité à faire évoluer.
+                </p>
+              </div>
+
+              <span class="about-cta-icon">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. CLIENTS -->
+    <section id="clients"></section>
+
+    <!-- 07. CONTACT -->
+    <section id="contact"></section>
+  </main>
+
+  <footer class="site-footer border-t border-black/5 bg-white py-8">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <p class="text-sm text-neutral-600">Made by Brewyart</p>
+
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-neutral-500">
+          <span class="inline-flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M5 7v10a2 2 0 002 2h10a2 2 0 002-2V7" />
+            </svg>
+            Brewyart Creative Studio
+          </span>
+
+          <span class="contact-item">
+  <img src="assets/img/icon_mail.svg" alt="" class="icon-brand">
+  <a href="mailto:sebastien@brewyart.com">sebastien@brewyart.com</a>
+</span>
+
+<span class="contact-item">
+  <img src="assets/img/icon_phone.svg" alt="" class="icon-brand">
+  <a href="tel:+32492748262">+32 492 74 82 62</a>
+</span>
+
+<span class="contact-item">
+  <img src="assets/img/icon_place.svg" alt="" class="icon-brand">
+  Wavre, Belgium
+</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/components/mouse-trail.js"></script>
+  <script src="assets/js/components/ambient-gradient.js"></script>
+  <script src="assets/js/components/hero.js"></script>
+  <script src="assets/js/components/services.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/components/projets.js"></script>
+  <script src="assets/js/components/contact.js"></script>
+  <script src="assets/js/components/about.js"></script>
+  <script src="assets/js/main.js"></script>
+<script>
+  (() => {
+    const toggle = document.querySelector('.site-header-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (!toggle || !mobileMenu) return;
+
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      mobileMenu.hidden = isOpen;
+      document.body.classList.toggle('menu-open', !isOpen);
+    });
+
+    mobileMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.hidden = true;
+        document.body.classList.remove('menu-open');
+      });
+    });
+  })();
+</script>
+</body>
+</html>

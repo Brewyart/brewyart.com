@@ -1,0 +1,52 @@
+<div class="contact-section">
+    <div class="contact-container">
+        
+        <div class="contact-header">
+            <span class="kicker">Let's build together</span>
+            <h2 class="title">Posez une question !</h2>
+            <p class="subtitle">Parlez-moi de votre projet ! Réponse sous les 24h.</p>
+        </div>
+
+        <form id="contact-form" class="form-wrapper">
+            
+            <div class="form-grid">
+                <div class="input-group">
+                    <label for="name">Nom Complet</label>
+                    <input type="text" id="name" name="name" required placeholder="Sébastien Brouillard">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email Pro</label>
+                    <input type="email" id="email" name="email" required placeholder="contact@marque.com">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="service">Expertise requise</label>
+                <div class="select-wrapper">
+                    <select id="service" name="service">
+                        <option value="branding">Branding & Logo</option>
+                        <option value="web">Web Design Premium</option>
+                        <option value="merch">Design Textile / Merch</option>
+                        <option value="strategie">Stratégie Créative</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Brief du projet</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Décrivez vos objectifs..."></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn" class="submit-button">
+                <span>Envoyer la demande</span>
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </button>
+
+            <div id="form-status" class="status-message"></div>
+        </form>
+        
+    </div>
+</div>

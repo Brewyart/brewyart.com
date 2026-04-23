@@ -1,0 +1,182 @@
+#services {
+  position: relative;
+  z-index: 1;
+  padding-top: 18px;
+}
+
+#services .services-section {
+  width: min(calc(100% - 48px), 1320px);
+  margin: 0 auto;
+  padding: 74px 0 118px;
+  position: relative;
+}
+
+#services .services-intro {
+  max-width: 920px;
+  margin: 0 0 56px;
+}
+
+#services .services-title {
+  margin: 18px 0 14px;
+  font-size: clamp(2.8rem, 5.5vw, 4.85rem);
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+  max-width: 11ch;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+#services .services-text {
+  margin: 0;
+  max-width: 66ch;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.74;
+}
+
+#services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+#services .service-card,
+#services .service-visual {
+  position: relative;
+  min-height: 438px;
+  overflow: visible;
+}
+
+#services .service-visual {
+  width: 100%;
+  background: transparent;
+}
+
+#services .service-image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: min(100%, 264px);
+  height: 224px;
+  object-fit: contain;
+  object-position: center top;
+  transform: translate(-50%, -56px) scale(1);
+  opacity: 0;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  transition: transform 0.65s var(--ease-premium), opacity 0.65s ease;
+}
+
+#services .service-card.is-image-visible .service-image {
+  transform: translate(-50%, 0) scale(1);
+  opacity: 1;
+}
+
+#services .service-card.is-image-visible:hover .service-image {
+  transform: translate(-50%, -8px) scale(1.1);
+}
+
+#services .service-content {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 54px);
+  width: min(100%, 272px);
+  min-height: 204px;
+  z-index: 3;
+  padding: 24px 22px 20px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.58);
+  background: linear-gradient(180deg, rgba(255,255,255,0.86), rgba(255,255,255,0.70));
+  backdrop-filter: blur(22px) saturate(145%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.74), 0 16px 42px rgba(15, 23, 42, 0.10);
+  text-align: left;
+  opacity: 0;
+  transition: transform 0.8s var(--ease-premium), opacity 0.8s var(--ease-premium), box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+#services .service-card:hover .service-content {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.78), 0 20px 50px rgba(15, 23, 42, 0.12);
+  border-color: rgba(255,255,255,0.70);
+}
+
+#services .service-card.is-content-visible .service-content {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+#services .service-title {
+  margin: 0 0 12px;
+  font-size: 1.55rem;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+#services .service-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.66;
+  min-height: 88px;
+}
+
+#services .service-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  margin-top: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #101418;
+  color: #fff;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  transition: transform 0.22s ease, opacity 0.22s ease, box-shadow 0.22s ease;
+}
+
+#services .service-cta:hover {
+  transform: translateY(-2px) scale(1.02);
+  opacity: 0.96;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.16);
+}
+
+@media (max-width: 1180px) {
+  #services .services-section { width: min(calc(100% - 32px), 1320px); }
+  #services .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 24px; }
+  #services .service-card, #services .service-visual { min-height: 424px; }
+}
+
+@media (max-width: 768px) {
+  #services { padding-top: 8px; }
+  #services .services-section {
+    width: min(90vw, 1320px);
+    padding: 54px 0 86px;
+  }
+  #services .services-intro { margin-bottom: 36px; }
+  #services .services-title {
+    font-size: clamp(2.25rem, 10vw, 3.5rem);
+    max-width: 100%;
+  }
+  #services .services-text { font-size: 0.98rem; }
+  #services .services-grid { grid-template-columns: 1fr; gap: 24px; }
+  #services .service-card, #services .service-visual { min-height: 406px; }
+  #services .service-image { width: min(100%, 250px); height: 208px; }
+  #services .service-content {
+    width: min(100%, 100%);
+    max-width: 100%;
+    min-height: 186px;
+    padding: 20px 18px 18px;
+    border-radius: 24px;
+  }
+  #services .service-title { font-size: 1.45rem; }
+  #services .service-text { min-height: auto; }
+}
